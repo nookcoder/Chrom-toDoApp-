@@ -1,9 +1,98 @@
-.js-clock {
+.js-clock h1 {
+  font-size: 80px;
+}
+
+.form,
+.greeing {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   width: 100%;
+  height: 100%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.container {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeing {
+  margin: 0;
+  font-size: 30px;
+}
+
+.todo-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.js-clock h1 {
-  font-size: 80px;
+input {
+  border: none;
+  background: inherit;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-top: 10px;
+  font-size: 13px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.js-toDo {
+  margin-top: 30px;
+}
+
+span {
+  margin-right: 10px;
+}
+
+button {
+  background: inherit;
+  border: none;
+}
+
+button:focus {
+  outline: none;
 }

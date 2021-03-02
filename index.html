@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chrome App</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="js-clock">
-        <h1>00:00</h1>
-    </div>
-
-    <div class="js-greeting">
-        <form action="#">
-            <input type="text" placeholder="What is your Name">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chrome App</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="js-clock">
+            <h1>00:00</h1>
+        </div>
+        
+        <form action="#" class="js-form form">
+            <input type="text" placeholder="Write your name">
         </form>
-    </div>
-
-    <script src="javascript/clock.js"></script>
+        
+        <h4 class="js-greeting greeing"></h4>
+        
+        <div class="todo-container">
+        <form action="#" class="js-toDo">
+            <input type="text" placeholder="Writ a someting to do">
+        </form>
+        <ul class="todolist">
+        </ul>
+        </div>
+        </div>
+        
+        <script defer src="js/clock.js"></script>
+        <script defer src="js/greet.js"></script>
+        <script defer src="js/do.js"></script>
+        <script defer src="js/background.js"></script>
 </body>
 </html>
